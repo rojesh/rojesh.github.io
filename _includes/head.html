@@ -1,0 +1,60 @@
+<head>
+  <title>{{ site.site-title }}</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <!--[if lte IE 8]><script src="{{ "assets/js/ie/html5shiv.js" | relative_url }}"></script><![endif]-->
+  <link rel="stylesheet" href="{{ "assets/css/main.css" | relative_url }}" />
+  <!--[if lte IE 9]><link rel="stylesheet" href="{{ "assets/css/ie9.css" | relative_url }}" /><![endif]-->
+  <!--[if lte IE 8]><link rel="stylesheet" href="{{ "assets/css/ie8.css" | relative_url }}" /><![endif]-->
+  <link rel="icon" href="{{ "assets/images/favicon.jpg" | relative_url }}" type="image/png">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="{{ site.meta-description }}">
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="{{ site.site-title }}">
+  <meta itemprop="description" content="{{ site.meta-description }}">
+  <meta itemprop="image" content="{{ "assets/images/rojesh.jpg" | relative_url }}">
+  <meta name="google" content="notranslate">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ site.site-title }}">
+  <meta name="twitter:description" content="{{ site.meta-description }}">
+  <meta name="twitter:image" content="{{ "assets/images/rojesh.jpg" | relative_url }}">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.meta-url  }}">
+  <meta property="og:title" content="{{ site.site-title }}">
+  <meta property="og:description" content="{{ site.meta-description }}">
+  <meta property="og:image" content="{{ "assets/images/rojesh.jpg" | relative_url }}" />
+  <meta property="og:image:secure_url" content="{{ "assets/images/rojesh.jpg" | relative_url }}" />
+  <meta property="og:image:type" content="image/jpeg" />
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.meta-url  }}">
+  <meta property="og:title" content="{{ site.site-title }}">
+  <meta property="og:description" content="{{ site.meta-description }}">
+  <meta property="og:image" content="{{ "assets/images/rojesh.jpg" | relative_url }}" />
+
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("user_n6D7cIgm4zsLDXKNk56Yd");
+    })();
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131189448-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-131189448-3');
+  </script>
+</head>

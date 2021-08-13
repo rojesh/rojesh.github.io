@@ -1,53 +1,180 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
-title: Rojesh Shrestha
+# site settings
+site-title: Rojesh Shrestha
+title: Rojesh
+subtitle: Shrestha
 email: rojace2011@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Hey there!!!
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: rojace35
-github_username:  rojesh
+description: "Self-motivated, dedicated and organized software engineer<br> pursuing professional experience in technology <br>with an aim to solve problems with technology."
+baseurl: "/portfolio" # the subpath of your site, e.g. /blog
+url: # the base hostname & protocol for your site
+author: Rojesh Shrestha
+street_address: Siddhipur
+city: Lalitpur
+state: Bagmati
+zip_code: 44600
+country: Nepal
+meta-url: https://rojesh.github.io/portfolio/
+meta-description: 'Software Engineer with experience on Ruby on Rails, Cloud native web development using AWS, GO and React'
 
-# Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+# homepage tiles
+tiles-source: pages # accepts "posts" or "pages"
+tiles-count: 30
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# social settings
+500px_url:
+facebook_url: 
+github_url: https://github.com/rojesh
+googleplus_url:
+instagram_url: 
+linkedin_url: https://www.linkedin.com/in/rojesh-shrestha-3b63985b/
+pinterest_url:
+slack_url:
+twitter_url: https://twitter.com/rojace35
+
+# experience list
+experiences:
+  - title: Lead Engineer
+    company: CloudFactory
+    duration: July 2021 - Present
+    works:
+      - 'Leading the development team by designing the implementation solution and working with them to build it.'
+      - 'Collaborating with the Product team and development team to set up correct expectations regarding release and making sure for the timely release of the features.'
+      - 'Ensuring team is adhering to the all compliances, standards and best practices set for engineering teams'
+  - title: Senior Software Engineer
+    company: CloudFactory
+    duration: Jan 2018 - Jun 2021
+    works:
+      - 'Learned and migrated to cloud native web development using AWS, React and Golang to build the proprietary product called Sputnik for CloudFactory.'
+      - 'Design and own micro services related to features like authentication and authorization using GoogleSSO, storing and searching user information using DynamoDB and ElasticSearch.'
+      - 'Migrating and consolidating the data from legacy platforms to new platform seamlessly without disruption.'
+      - 'Cross collaborating with multiple teams for developing and integration testing between various micro services.'
+      - 'Implementation of CI/CD pipeline for the platform using github actions.'
+      - 'Mentoring engineers both technically and culturally.'
+  - title: Associate Engineering Manager
+    company: CloudFactory
+    duration: July 2016 - Dec 2017
+    works:
+      - 'Responsible for hiring, training and mentoring other engineers and support staff.'
+      - 'Supported engineering management on continuous improvement, removing bottlenecks and impediments, people have enough skills, people are growing and do not have performance problems and people have personal goals and career development plans.'
+      - 'Worked with Product Managers to refine the features and collaborate with development teams to shape ideas and initiatives.'
+      - 'Escalated skill gaps in situations in the team and support the Engineering leadership team for mitigation plans.'
+      - 'Worked with Product Managers to conduct the first ever design sprint for our team to make sure we are solving the right problem.'
+  - title: Software Engineer
+    company: CloudFactory
+    duration: May 2013 - July 2016
+    works:
+      - 'Led a project for a Canadian medical company to digitize the medical forms of their patients using a web app that ingests the pdf, identify it with the barcode reader, splits the pdf, send it to our proprietary micro tasking platform for transcription and store the data in our clients database.'
+      - 'Led a project called SpeakerText which is an audio video transcription web application which later got acquired by another audio video transcription company.'
+      - 'Piloted and led the development of a new client facing web app that embedded features for handling chat communication between clients and our core cloudfactory employees, scheduling, time tracking and payout for the workers of our platforms.'
+      - 'Wore a hat of scrum master and was responsible for conducting sprint ceremonies.'
+      - 'Collaborate and brainstorm with the product team to introduce new features into our product.'
+      - 'Led the architectural shift from monolith to micro service architecture in the rails based web application.'
+      - 'Took upon the role of tech lead and was responsible for closely working with system architects to design and finalize the technical solutions and help the team to implement the solution.'
+      - 'Guiding and mentoring new hires and juniors.'
+  - title: Software Developer
+    company: CloudFactory
+    duration: Nov 2012 - May 2013
+    works:
+      - 'Developed and delivered sprint stories both with peers and independently.'
+      - 'Fixing and developing CloudFactory microtasking platform-related bugs and features.'
+      - 'Design, Document and Develop API according to OAI (Open API Initiative) Specification using Swagger tools.'
+      - 'Monitor the production environment using 3rd party services like Newrelic and honeybadger and provide support in fixing the issues if any.'
+
+# skill lists
+skills:
+  - category: Programming Languages
+    names:
+      - Ruby
+      - GO
+      - Javascript
+      - Typescript
+      - HTML/CSS
+  - category: Frameworks
+    names:
+      - Ruby on Rails
+      - Sinatra
+      - Grape
+      - Node
+      - ReactJS
+      - Granitic
+      - Bootstrap
+  - category: Database & Web Services
+    names:
+      - Postgres
+      - Redis
+      - MongoDB
+      - MySQL
+      - DynamoDB
+      - ElasticSearch
+  - category: Cloud Native
+    names:
+      - AWS
+      - GCP
+  - category: Project Monitoring and Management Tools
+    names:
+      - HoneyBadger
+      - LogEntries
+      - NewRelic
+      - Jira
+      - Trello
+      - Prodpad
+  - category: Software Development Methodology
+    names:
+      - Agile Methodology with Scrum Process
+      - KanBan
+      - Rapid Development
+  - category: Version Control Tools
+    names:
+      - Github
+  - category: Software & Operating Systems
+    names:
+      - Google Docs, Excels, Presentation
+      - Visual Code, Sublime
+      - MacOS, Linux, Windows
+  - category: Personal Skills
+    names:
+      - Initiative
+      - Eager to Learn
+      - Working in/as a team
+      - Adaptability.
+
+trainings:
+  - title: Certified Scrum Master
+    featured_date: Feb 2016 - Feb 2018
+    image: assets/images/scrum.png
+    description: Licensed Scrum Master
+  - title: Google Certified Professional Cloud Architect
+    featured_date: April 2021 - April 2021
+    image: assets/images/gcp.png
+    description: Professional Cloud Architect
+
+# education list
+education:
+  - title: "Bachelor’s in Computer Engineering"
+    institution: Pulchowk Engineering Campus
+    start_date: 2008
+    completion_date: 2012
+    major: 'Computer Engineering'
+  - title: Diploma in Computer Engineering
+    institution: Thapathali Engineering Campus
+    start_date: 2005
+    completion_date: 2008
+    major: 'Computer Engineering'
+  - title: School Leaving Certificate
+    institution: National Children School
+    completion_date: 2004
+    major: 'Science & Maths'
+
+# Languages list
+languages:
+  - name: Nepali (Native)
+    link: 'https://en.wikipedia.org/wiki/Nepali_language'
+  - name: English
+    link: ''
+  - name: Newari (Mother Tongue)
+    link: 'https://en.wikipedia.org/wiki/Newar_language'
+
+# build settings
+markdown: kramdown
+
+sass:
+  style: compressed

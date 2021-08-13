@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+
+  {% include header.html %}
+
+
+  <!-- Main -->
+  <div id="main" class="alt">
+    <section id="banner" class="style2">
+      <div class="inner">
+        <span class="image">
+          <img src="{{ site.baseurl }}/{{ page.image }}" alt="">
+        </span>
+        <header class="major">
+          <h1>{{ page.title }}</h1>
+        </header>
+        <div class="content">
+          {{ page.description }}
+        </div>
+      </div>
+    </section>
+    <!-- One -->
+    <section id="one">
+      <div class="inner">
+        {% for post in site.posts %}
+          {% if post.title != 404 %}
+            <br>
+            <header class="major">
+              <h3>{{ post.title }}</h3>
+            </header>
+            {% if post.image %}
+              <span class="image left"><img src="{{ site.baseurl }}/{{ post.image }}" alt="" /></span>
+            {% endif %}
+            {% if post.description %}
+              <p>{{ post.description }}</p>
+            {% endif %}
+            {% if post.published_date %}
+              <p><i>Published on: {{ post.published_date }}</i></p>
+            {% endif %}
+            <p>{{ post.content }}</p>
+            <!-- {% if post.date %}<p>{{ post.date }}</p>{% endif %} -->
+          {% endif %}
+        {% endfor %}
+        </div>
+      </section>
+
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+  </html>

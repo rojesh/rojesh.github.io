@@ -1,0 +1,21 @@
+<!-- Main -->
+<div id="main" class="alt">
+  <!-- One -->
+  <section id="one">
+    <div class="inner">
+      {% for education in site.education limit:site.education-count %}
+        <div class="row">
+          <div class="12u$ 12u$(small)">
+            <h3>{{ education.title }}</h3>
+            <h4>{{ education.institution }}</h4>
+            <h4>{{ education.start_date }} - {{ education.completion_date }}</h4>
+            <p>Major: {{ education.major }}</p>
+          </div>
+        </div>
+        {% if site.education.size != forloop.index  %}
+          <hr class="major" />
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+</div>

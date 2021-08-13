@@ -1,0 +1,55 @@
+<!-- Main -->
+<div id="main" class="alt">
+  <!-- One -->
+  <section id="one">
+    <div class="inner">
+      <h2 id="content">Ruby on Rails Engineer</h2>
+      <div class="row">
+        {% for skill in site.skills limit:site.skills-count %}
+          {% if forloop.index < 3 %}
+            <div class="4u 12u$(small)">
+              <h3>{{ skill.category }}</h3>
+              <ul class="alt">
+                {% for name in skill.names limit:skill.names-count %}
+                <li>{{ name }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% elsif forloop.index == 3 %}
+            <div class="4u$ 12u$(small)">
+              <h3>{{ skill.category }}</h3>
+              <ul class="alt">
+                {% for name in skill.names limit:skill.names-count %}
+                <li>{{ name }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% elsif forloop.index == 5 %}
+            <div class="6u$ 12u$(medium)">
+              <h3>{{ skill.category }}</h3>
+              <ul class="alt">
+                {% for name in skill.names limit:skill.names-count %}
+                <li>{{ name }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% elsif forloop.index == 8 %}
+            <div class="12u$ 12u$(medium)">
+              <h3>{{ skill.category }}</h3>
+              <p>{{ skill.names | join: ', ' }}</p>
+            </div>
+          {% else %}
+            <div class="6u 12u$(medium)">
+              <h3>{{ skill.category }}</h3>
+              <ul class="alt">
+                {% for name in skill.names limit:skill.names-count %}
+                <li>{{ name }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</div>

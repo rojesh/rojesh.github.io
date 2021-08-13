@@ -1,0 +1,18 @@
+<!-- Main -->
+<div id="main" class="alt">
+  <!-- One -->
+  <section id="one">
+    <div class="inner">
+      <!-- Content -->
+      <div class="row">
+        {% for language in site.languages limit:site.languages-count %}
+          <div class="4u 12u$(small)">
+            <ul class="actions vertical">
+              <li><a href="{{ language.link }}" class="button fit">{{ language.name }}</a></li>
+            </ul>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</div>

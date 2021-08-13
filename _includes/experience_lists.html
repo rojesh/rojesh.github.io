@@ -1,0 +1,25 @@
+<!-- Main -->
+<div id="main" class="alt">
+  <!-- One -->
+  <section id="one">
+    <div class="inner">
+      {% for experience in site.experiences limit:site.experiences-count %}
+        <div class="row">
+          <div class="12u$ 12u$(small)">
+            <h3>{{ experience.title }}</h3>
+            <h4>{{ experience.company }}</h4>
+            <h4>{{ experience.duration }}</h4>
+            <ul class="m-0">
+              {% for work in experience.works limit:experience.works-count %}
+                <li>{{ work}}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        {% if site.experiences.size != forloop.index  %}
+          <hr class="major" />
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+</div>

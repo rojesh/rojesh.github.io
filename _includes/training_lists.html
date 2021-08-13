@@ -1,0 +1,25 @@
+<!-- Main -->
+<div id="main" class="alt">
+  <!-- One -->
+  <section id="one">
+    <div class="inner">
+      <!-- Content -->
+      {% for training in site.trainings limit:site.trainings-count %}
+        <div class="row">
+          <div class="12u$ 12u$(small)">
+              <h3>{{ training.title }}</h3>
+              <p>
+                <span class="image left"><img src="{{ training.image }}" alt="{{ training.title }}" /></span>
+                <h4>{{ training.featured_date }}</h4>
+                {{ training.description }}
+                <br>
+              </p>
+          </div>
+        </div>
+        {% if site.trainings.size != forloop.index  %}
+          <hr class="major" />
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+</div>
