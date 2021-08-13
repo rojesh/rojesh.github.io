@@ -4,7 +4,7 @@ title: Rojesh
 subtitle: Shrestha
 email: rojace2011@gmail.com
 description: "Self-motivated, dedicated and organized software engineer<br> pursuing professional experience in technology <br>with an aim to solve problems with technology."
-baseurl: "/portfolio" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 author: Rojesh Shrestha
 street_address: Siddhipur
@@ -12,7 +12,7 @@ city: Lalitpur
 state: Bagmati
 zip_code: 44600
 country: Nepal
-meta-url: https://rojesh.github.io/portfolio/
+meta-url: https://rojesh.github.io
 meta-description: 'Software Engineer with experience on Ruby on Rails, Cloud native web development using AWS, GO and React'
 
 # homepage tiles
